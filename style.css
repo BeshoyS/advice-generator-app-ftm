@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  color: hsl(193, 38%, 86%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.main {
+  position: relative;
+  width: min(90%, 500px);
+  padding: 2.5rem 1.5rem;
+  margin-inline: auto;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+
+.advice-id {
+  color: hsl(150, 100%, 66%);
+  font-size: 0.65rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.quote {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.end-quote {
+  margin-block: 1.5rem 1rem;
+  width: 100%;
+}
+
+.btn {
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  padding: 1.2rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+  cursor: pointer;
+  transition: box-shadow 0.5s;
+  -webkit-transition: box-shadow 0.5s;
+  -moz-transition: box-shadow 0.5s;
+  -ms-transition: box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
+}
+
+.btn:hover {
+  box-shadow: 0 0px 40px 0.5px hsl(150, 100%, 66%);
+}
+
+.dice {
+  width: 100%;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    width: min(90%, 550px);
+    padding: 2.5rem 3rem;
+  }
+  .quote {
+    font-size: 1.7rem;
+  }
+}
